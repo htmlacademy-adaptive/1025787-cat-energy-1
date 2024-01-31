@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Интернет-магазин "CAT ENERGY"</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo-picture" href="#">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Супер-кот">
+        </a>
+        <a class="logo-text" href="#">
+          <img class="logo-text__logo-text-image" src="img/logo-text.svg" width="101" height="18" alt="Интернет-магазин "CAT ENERGY"">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Интернет-магазин "CAT ENERGY" - корм для котов</h1>
+
+      <section class="slogan">
+        <div class="slogan__wrapper">
+          <header class="slogan__header">
+            <h2 class="slogan__title">Функциональное <br> питание для котов</h2>
+            <p class="slogan__text">Занялся собой? Займись котом!</p>
+          </header>
+          <div class="slogan__image">
+            <img src="img/can-of-cat-food.png" width="280" height="270" alt="Банка корма для кота">
+          </div>
+          <a class="button choose-program" href="form.html">Подобрать программу</a>
+        </div>
+      </section>
+
+    </main>
 
   </body>
 </html>
