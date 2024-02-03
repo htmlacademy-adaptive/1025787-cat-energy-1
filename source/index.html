@@ -5,7 +5,7 @@
     <title>Интернет-магазин "CAT ENERGY"</title>
   </head>
   <body class="page__body">
-
+    <!-- Шапка сайта -->
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo-picture" href="#">
@@ -35,7 +35,7 @@
 
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин "CAT ENERGY" - корм для котов</h1>
-
+      <!-- Hero section -->
       <section class="slogan">
         <div class="slogan__wrapper">
           <header class="slogan__header">
@@ -48,7 +48,7 @@
           <a class="button choose-program" href="form.html">Подобрать программу</a>
         </div>
       </section>
-
+      <!-- Секция с программами питания -->
       <section class="nutrition-programs">
         <div class="nutrition-programs__wrapper">
           <h2 class="visually-hidden">Программы питания</h2>
@@ -66,7 +66,7 @@
           </ul>
         </div>
       </section>
-
+      <!-- Секция с описанием корма и результата -->
       <section class="operating-principle">
         <div class="operating-principle__wrapper">
           <h2 class="operating-principle__title">Как это работает</h2>
@@ -86,7 +86,7 @@
           </ol>
         </div>
       </section>
-
+      <!-- Секция с примером похудевшего кота -->
       <section class="example">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
@@ -118,24 +118,55 @@
         </div>
       </section>
 
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <div class="contacts__cooperation-address">
-            <div class="contacts__cooperation cooperation">
-              <p class="cooperation-text">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
-            </div>
-            <div class="contacts__address address">
-              <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="address__text">Санкт-Петербург</p>
-            </div>
-          </div>
-          <div class="contacts-location">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A869ed57891d6bc126bcd76c2554f0039f41e970164f3414c9695af0dc0ae28df&amp;width=320&amp;height=362&amp;lang=ru_RU&amp;scroll=true"></script>
-          </div>
-        </div>
-      </section>
-
     </main>
 
+    <!-- Подвал сайта -->
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <!-- Элемент подвала с приглашением диллеров и адресом -->
+        <div class="main-footer__cooperation-address">
+          <div class="main-footer__cooperation cooperation">
+            <p class="cooperation-text">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+          </div>
+          <div class="main-footer__address address">
+            <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="address__text">Санкт-Петербург</p>
+          </div>
+        </div>
+        <!-- Элемент подвала - блок с картой -->
+        <div class="main-footer__location location">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A869ed57891d6bc126bcd76c2554f0039f41e970164f3414c9695af0dc0ae28df&amp;width=320&amp;height=362&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <!-- Элемент подвала - блок с логотипом, социальными сетями и HTML Academy -->
+        <div class="main-footer__contacts contacts">
+          <!-- Элемент подвала с логотипом -->
+          <div class="contacts__logo">
+            <a class="logo-text" href="#">
+              <img class="logo-text__logo-text-image" src="img/logo-text.svg" width="128" height="24" alt="Интернет-магазин "CAT ENERGY"">
+            </a>
+          </div>
+          <!-- Элемент подвала - блок с социальными сетями -->
+          <div class="contacts__social social">
+            <b class="visually-hidden">CAT ENERGY в социальных сетях</b>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">CAT ENERGY в ВКонтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">CAT ENERGY в youtube</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">CAT ENERGY в telegram</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Элемент подвала с HTML Academy -->
+          <div class="contacts__copyright copyright">
+            <b class="visually-hidden">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
