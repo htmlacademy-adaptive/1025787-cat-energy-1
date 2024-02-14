@@ -1,0 +1,27 @@
+.how {
+  margin-bottom: 20px;
+}
+
+.how__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 29px;
+}
+
+.how__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.how__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.how__item {
+  padding-left: 80px;
+}
+
+.how__description {
+  margin: 0;
+}
