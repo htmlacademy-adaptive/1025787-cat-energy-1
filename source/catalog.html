@@ -213,33 +213,35 @@
             </li>
           </ul>
           <!-- Дополнительные товары -->
-          <h2 class="subtitle">Дополнительные товары</h2>
-          <ul class="optionally">
-            <li class="optionally__item">
-              <a class="optionally__product" href="#">Сахарозаменитель</a>
-              <p class="optionally__type">1 упаковка (100 г)</p>
-              <p class="optionally__price">200 ₽</p>
-              <a class="optionally__button button" href="#">Заказать</a>
-            </li>
-            <li class="optionally__item">
-              <a class="optionally__product" href="#">Питьевая вода</a>
-              <p class="optionally__type">5 литров</p>
-              <p class="optionally__price">50 ₽</p>
-              <a class="optionally__button button" href="#">Заказать</a>
-            </li>
-            <li class="optionally__item">
-              <a class="optionally__product" href="#">Молоко</a>
-              <p class="optionally__type">1 литр</p>
-              <p class="optionally__price">100 ₽</p>
-              <a class="optionally__button button" href="#">Заказать</a>
-            </li>
-            <li class="optionally__item">
-              <a class="optionally__product" href="#">Витамины</a>
-              <p class="optionally__type">1 упаковка (30 г)</p>
-              <p class="optionally__price">300 ₽</p>
-              <a class="optionally__button button" href="#">Заказать</a>
-            </li>
-          </ul>
+          <section class="optionally">
+            <h2 class="subtitle">Дополнительные товары</h2>
+            <ul class="optionally__list">
+              <li class="optionally__item">
+                <a class="optionally__product" href="#">Сахарозаменитель</a>
+                <p class="optionally__type">1 упаковка (100 г)</p>
+                <p class="optionally__price">200 ₽</p>
+                <a class="optionally__button button" href="#">Заказать</a>
+              </li>
+              <li class="optionally__item">
+                <a class="optionally__product" href="#">Питьевая вода</a>
+                <p class="optionally__type">5 литров</p>
+                <p class="optionally__price">50 ₽</p>
+                <a class="optionally__button button" href="#">Заказать</a>
+              </li>
+              <li class="optionally__item">
+                <a class="optionally__product" href="#">Молоко</a>
+                <p class="optionally__type">1 литр</p>
+                <p class="optionally__price">100 ₽</p>
+                <a class="optionally__button button" href="#">Заказать</a>
+              </li>
+              <li class="optionally__item">
+                <a class="optionally__product" href="#">Витамины</a>
+                <p class="optionally__type">1 упаковка (30 г)</p>
+                <p class="optionally__price">300 ₽</p>
+                <a class="optionally__button button" href="#">Заказать</a>
+              </li>
+            </ul>
+          </section>
           <!-- Подарок -->
           <section class="main-inner__gift gift">
             <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
@@ -253,7 +255,7 @@
       <!-- Блок с адресом и картой -->
       <div class="map">
         <!-- Элемент блока map с приглашением дилеров и адресом -->
-        <div class="map__cooperation-address">
+        <div class="map__cooperation-address map__cooperation-address--catalog">
           <h2 class="map__cooperation-title">Приглашаем <br> к сотрудничеству <br> дилеров!</h2>
           <address class="map__address">
             <p class="map__address-text">ул. Большая Конюшенная, д. 19/8</p>
@@ -262,33 +264,37 @@
         </div>
         <!-- Элемент блока map - блок с картой -->
         <div class="map__location">
-          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A869ed57891d6bc126bcd76c2554f0039f41e970164f3414c9695af0dc0ae28df&amp;width=320&amp;height=362&amp;lang=ru_RU&amp;scroll=true"></script>
+          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A869ed57891d6bc126bcd76c2554f0039f41e970164f3414c9695af0dc0ae28df&amp;width=auto&amp;height=362&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
       </div>
+
       <div class="main-footer__wrapper">
-        <!-- Элемент подвала - блок с логотипом, социальными сетями и HTML Academy -->
-        <div class="main-footer__contacts contacts">
-          <!-- Элемент подвала с логотипом -->
-          <a class="main-footer__logo" href="#">
-            <img src="img/logo-text.svg" width="128" height="24" alt="Интернет-магазин «CAT ENERGY»">
-          </a>
-          <!-- Элемент подвала - блок с социальными сетями -->
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">CAT ENERGY в ВКонтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">CAT ENERGY в youtube</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">CAT ENERGY в telegram</a>
-            </li>
-          </ul>
-          <!-- Элемент подвала с HTML Academy -->
-          <div class="contacts__copyright">
-            <b class="visually-hidden">Разработано:</b>
-            <a class="contacts__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
+        <!-- Элемент подвала с логотипом -->
+        <a class="main-footer__logo" href="#">
+          <img src="img/logo-text.svg" width="128" height="24" alt="Интернет-магазин «CAT ENERGY»">
+        </a>
+        <!-- Элемент подвала - блок с социальными сетями -->
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">CAT ENERGY в ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">CAT ENERGY в youtube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">CAT ENERGY в telegram</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Элемент подвала с HTML Academy -->
+        <div class="main-footer__copyright">
+          <b class="visually-hidden">Разработано:</b>
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>

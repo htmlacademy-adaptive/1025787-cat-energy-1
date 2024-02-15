@@ -1,0 +1,36 @@
+.optionally {
+  padding: 25px 20px 0 20px;
+  margin-bottom: 35px;
+}
+
+.optionally__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  border-top: 1px solid #cdcdcd;
+}
+
+.optionally__item {
+  padding: 13px 0 19px 0;
+}
+
+.optionally__product {
+  display: block;
+
+  font-family: "Oswald", sans-serif;
+  color: #222222;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.optionally__type,
+.optionally__price {
+  color: #444444;
+  font-size: 14px;
+  line-height: 14px;
+
+  margin: 13px 0 19px 0;
+}

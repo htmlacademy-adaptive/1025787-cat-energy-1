@@ -1,0 +1,21 @@
+.gift {
+  margin: 0 20px 35px 20px;
+  height: 290px;
+
+  background-image: url("../img/cat-case.png");
+  background-repeat: no-repeat;
+  background-color: rgba(104, 183, 56, 0.85);
+
+  width: 280px;
+}
+
+.gift__title {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  width: 160px;
+  margin: 0;
+  padding: 187px 0 43px 0;
+}
