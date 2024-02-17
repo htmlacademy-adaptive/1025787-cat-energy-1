@@ -1,6 +1,6 @@
 @import "./global/fonts.scss";
 @import "./blocks/page.scss";
-// @import "./blocks/visually-hidden.scss";
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
@@ -19,3 +19,4 @@
 @import "./blocks/optionally.scss";
 @import "./blocks/subtitle.scss";
 @import "./blocks/gift.scss";
+@import "./blocks/form.scss";
