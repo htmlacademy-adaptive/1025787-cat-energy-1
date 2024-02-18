@@ -1,0 +1,50 @@
+.example {
+  margin-bottom: 20px;
+
+  background-color: #eaeaea;
+}
+
+.example__wrapper {
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.example__comment {
+  margin-bottom: 20px;
+}
+
+.example__list {
+  margin: 0 0 20px 0;
+}
+
+.example__number {
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__description {
+  font-size: 12px;
+  line-height: 12px;
+
+  margin: 0;
+}
+
+.example__outlay {
+  margin-bottom: 20px;
+}
+
+.example__title,
+.example__sum {
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  margin: 0;
+}

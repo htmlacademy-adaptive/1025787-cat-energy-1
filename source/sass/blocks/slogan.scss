@@ -1,0 +1,31 @@
+.slogan {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 100%;
+
+  background: linear-gradient(180deg, #68b738 60%, #ffffff 60%);
+  background-image: url("../img/Green-cat.png");
+  background-repeat: no-repeat;
+
+  margin-bottom: 20px;
+}
+
+.slogan__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+}
+
+.slogan__title {
+  font-size: 36px;
+  line-height: 100%;
+
+  margin: 0 0 25px 0;
+}
+
+.slogan__text {
+  text-transform: uppercase;
+
+  margin: 0 0 29px 0;
+}
