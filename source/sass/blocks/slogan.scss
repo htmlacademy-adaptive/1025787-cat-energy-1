@@ -9,12 +9,32 @@
   background-repeat: no-repeat;
 
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    background: none;
+
+    min-height: 875px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 580px;
+  }
 }
 
 .slogan__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 27px;
+  padding: 27px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 20px 0 120px;
+  }
+}
+
+.slogan__header {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .slogan__title {
@@ -22,10 +42,25 @@
   line-height: 100%;
 
   margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin: 0 0 40px 0;
+  }
 }
 
 .slogan__text {
   text-transform: uppercase;
 
   margin: 0 0 29px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.slogan__choose-program {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
 }
