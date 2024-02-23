@@ -20,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 580px;
+    margin-bottom: 80px;
   }
 }
 
@@ -28,6 +29,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 65px 20px 0 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 110px 0 190px;
   }
 }
 
