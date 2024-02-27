@@ -1,5 +1,4 @@
 .main-nav {
-  width: 100%;
   color: #000000;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +12,6 @@
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   height: 65px;
-  padding: 0 20px;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
@@ -67,8 +65,6 @@
   justify-content: center;
   align-items: center;
   height: 65px;
-  width: 100%;
-  padding: 0 20px;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {

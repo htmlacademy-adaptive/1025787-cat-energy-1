@@ -2,6 +2,40 @@
   flex-grow: 1;
 }
 
+.main-inner__wrapper {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 220px);
+    margin: 0 auto;
+  }
+}
+
+.main-inner__catalog {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 75px;
+  }
+}
+
+.main-inner__catalog .title {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .main-inner__text {
   font-family: "Oswald", sans-serif;
   color: #000000;

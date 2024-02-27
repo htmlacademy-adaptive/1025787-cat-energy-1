@@ -1,5 +1,5 @@
 .how {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 47px;
@@ -15,16 +15,17 @@
 }
 
 .how__wrapper {
-  padding: 0 20px;
-  margin-bottom: 50px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
-    margin: 0;
+    width: calc(100% - 60px);
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    width: calc(100% - 220px);
+    margin: 0 auto;
   }
 }
 
