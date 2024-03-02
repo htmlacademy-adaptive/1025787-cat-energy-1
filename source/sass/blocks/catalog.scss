@@ -12,12 +12,15 @@
     gap: 60px;
 
     border: none;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
     row-gap: 63px;
+
+    margin-bottom: 75px;
   }
 }
 

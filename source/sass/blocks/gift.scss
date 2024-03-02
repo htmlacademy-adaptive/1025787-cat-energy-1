@@ -1,5 +1,4 @@
 .gift {
-  margin: 0 20px 35px 20px;
   height: 290px;
 
   background-image: url("../img/cat-case.png");
@@ -7,6 +6,12 @@
   background-color: rgba(104, 183, 56, 0.85);
 
   width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 285px;
+    // картинка пока старая, потом изменю на картинку с нужными параметрами
+  }
 }
 
 .gift__title {
