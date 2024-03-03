@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин «CAT ENERGY» - Каталог продукции</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -214,7 +215,7 @@
           </ul>
           <!-- Дополнительные товары -->
           <section class="optionally">
-            <h2 class="subtitle">Дополнительные товары</h2>
+            <h2 class="optionally__title subtitle">Дополнительные товары</h2>
             <ul class="optionally__list">
               <li class="optionally__item">
                 <a class="optionally__product" href="#">Сахарозаменитель</a>
@@ -241,10 +242,10 @@
                 <a class="optionally__button button" href="#">Заказать</a>
               </li>
             </ul>
-          </section>
-          <!-- Подарок -->
-          <section class="main-inner__gift gift">
-            <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
+            <!-- Подарок -->
+            <section class="optionally__gift gift">
+              <h3 class="gift__title">Закажите все и получите чехол для кота в подарок!</h3>
+            </section>
           </section>
         </section>
       </div>
@@ -258,13 +259,13 @@
         <div class="map__cooperation-address map__cooperation-address--catalog">
           <h2 class="map__cooperation-title">Приглашаем <br> к сотрудничеству <br> дилеров!</h2>
           <address class="map__address">
-            <p class="map__address-text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="map__address-text">ул. Большая <br> Конюшенная, д. 19/8</p>
             <p class="map__address-text">Санкт-Петербург</p>
           </address>
         </div>
         <!-- Элемент блока map - блок с картой -->
         <div class="map__location">
-          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A869ed57891d6bc126bcd76c2554f0039f41e970164f3414c9695af0dc0ae28df&amp;width=auto&amp;height=362&amp;lang=ru_RU&amp;scroll=true"></script>
+          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A869ed57891d6bc126bcd76c2554f0039f41e970164f3414c9695af0dc0ae28df&amp;width=auto&amp;height=auto&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
       </div>
 
@@ -307,5 +308,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
+
   </body>
 </html>

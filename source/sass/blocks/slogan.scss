@@ -7,14 +7,46 @@
   background: linear-gradient(180deg, #68b738 60%, #ffffff 60%);
   background-image: url("../img/Green-cat.png");
   background-repeat: no-repeat;
+  background-position: top center;
 
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    background: none;
+
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    background: linear-gradient(270deg, #68b738 50%, #ffffff 50%);
+  }
 }
 
 .slogan__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 27px;
+  width: calc(100% - 40px);
+  padding: 27px 0 0 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+    padding: 65px 0 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 220px);
+    padding: 65px 0 0 80px;
+  }
+}
+
+.slogan__header {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 50px;
+  }
 }
 
 .slogan__title {
@@ -22,10 +54,29 @@
   line-height: 100%;
 
   margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin: 0 0 40px 0;
+  }
 }
 
 .slogan__text {
   text-transform: uppercase;
 
   margin: 0 0 29px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.slogan__image {
+  text-align: center;
+}
+
+.slogan__choose-program {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
 }

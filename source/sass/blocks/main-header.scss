@@ -1,7 +1,31 @@
 .main-header {
-  min-height: 66px;
-
   color: #000000;
   background-color: #ffffff;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.main-header__wrapper {
+  width: calc(100% - 40px);
+  min-height: 65px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+    min-height: 50px;
+    padding: 25px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 220px);
+    min-height: 60px;
+    padding: 55px 0 0 0;
+  }
 }

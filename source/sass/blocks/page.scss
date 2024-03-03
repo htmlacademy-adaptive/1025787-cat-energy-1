@@ -1,3 +1,9 @@
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+
 .page {
   height: 100%;
 }
@@ -14,4 +20,9 @@
 
   color: #000000;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }

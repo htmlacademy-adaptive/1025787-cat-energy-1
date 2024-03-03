@@ -1,22 +1,69 @@
 .optionally {
   padding: 0 20px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.optionally__title {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .optionally__list {
-  margin: 36px 0 0 0;
+  margin: 35px 0 35px 0;
   padding: 0;
   list-style-type: none;
 
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    margin: 0;
+  }
 }
 
 .optionally__item {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
   padding: 13px 0 19px 0;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 4fr 3fr 1fr;
+    row-gap: 25px;
+
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 8fr 5fr 2fr 7fr;
+    column-gap: 40px;
+    row-gap: 0;
+    align-items: center;
+
+    padding: 15px 0 15px 0;
+  }
 }
 
 .optionally__product {
   display: block;
+  grid-column: 1 / -1;
 
   font-family: "Oswald", sans-serif;
   color: #222222;
@@ -24,6 +71,13 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .optionally__type,
@@ -33,4 +87,46 @@
   line-height: 14px;
 
   margin: 13px 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    margin: 0;
+  }
+}
+
+.optionally__type {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
+}
+
+.optionally__price {
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+  }
+}
+
+.optionally__button {
+  grid-column: 1 / -1;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+  }
+}
+
+.optionally__gift {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+  }
 }
