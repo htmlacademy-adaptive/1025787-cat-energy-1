@@ -37,7 +37,7 @@
   }
 }
 
-.example__wrapper .title {
+.example__title {
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
   }
@@ -131,7 +131,7 @@
   }
 }
 
-.example__title,
+.example__subtitle,
 .example__sum {
   font-family: "Oswald", sans-serif;
   color: #000000;
