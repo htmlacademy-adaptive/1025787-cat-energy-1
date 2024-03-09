@@ -46,7 +46,7 @@
 }
 
 .nutrition-programs__item {
-  background-color: #f2f2f2;
+  background-color: $light-grey;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
@@ -59,8 +59,8 @@
 }
 
 .nutrition-programs__title {
-  font-family: "Oswald", sans-serif;
-  color: #000000;
+  font-family: $oswald;
+  color: $dark;
   font-size: 24px;
   line-height: 154%;
   text-transform: uppercase;
@@ -80,13 +80,13 @@
 }
 
 .nutrition-programs__description {
-  color: #444444;
+  color: $dark-grey;
   font-size: 14px;
   line-height: 129%;
   padding-bottom: 22px;
   margin: 0 0 15px 0;
 
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $light-grey-6;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -98,8 +98,8 @@
 .nutrition-programs__link {
   display: block;
 
-  font-family: "Oswald", sans-serif;
-  color: #000000;
+  font-family: $oswald;
+  color: $dark;
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;

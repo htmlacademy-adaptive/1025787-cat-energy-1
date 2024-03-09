@@ -42,8 +42,8 @@
 }
 
 .main-inner__text {
-  font-family: "Oswald", sans-serif;
-  color: #000000;
+  font-family: $oswald;
+  color: $dark;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;

@@ -25,7 +25,7 @@
   padding: 0;
   list-style-type: none;
 
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $light-grey-4;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
@@ -42,7 +42,7 @@
   grid-template-columns: 2fr 1fr;
 
   padding: 13px 0 19px 0;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $light-grey-4;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 4fr 3fr 1fr;
@@ -65,8 +65,8 @@
   display: block;
   grid-column: 1 / -1;
 
-  font-family: "Oswald", sans-serif;
-  color: #222222;
+  font-family: $oswald;
+  color: $dark-grey-2;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -82,7 +82,7 @@
 
 .optionally__type,
 .optionally__price {
-  color: #444444;
+  color: $dark-grey;
   font-size: 14px;
   line-height: 14px;
 

@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 47px;
     margin-bottom: 45px;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $light-grey-3;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +59,7 @@
 }
 
 .how__description {
-  color: #444444;
+  color: $dark-grey;
 
   margin: 0;
 

@@ -8,10 +8,10 @@
   flex-direction: column;
   min-height: 100%;
 
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-size: 14px;
   line-height: 18px;
 
-  color: #000000;
-  background-color: #ffffff;
+  color: $dark;
+  background-color: $light;
 }

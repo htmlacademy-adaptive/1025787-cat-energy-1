@@ -1,10 +1,10 @@
 .slogan {
-  font-family: "Oswald", sans-serif;
-  color: #ffffff;
+  font-family: $oswald;
+  color: $light;
   font-size: 14px;
   line-height: 100%;
 
-  background: linear-gradient(180deg, #68b738 60%, #ffffff 60%);
+  background: linear-gradient(180deg, $basic-green 60%, $light 60%);
   background-image: url("../img/green-cat.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -12,7 +12,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    color: #000000;
+    color: $dark;
     background: none;
 
     margin-bottom: 0;
@@ -20,7 +20,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
-    background: linear-gradient(270deg, #68b738 50%, #ffffff 50%);
+    background: linear-gradient(270deg, $basic-green 50%, $light 50%);
   }
 }
 

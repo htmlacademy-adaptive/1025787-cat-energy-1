@@ -1,13 +1,13 @@
 .example {
-  background-color: #eaeaea;
+  background-color: $light-grey-5;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, #eaeaea 50%, #ffffff 50%);
+    background: linear-gradient(0deg, $light-grey-5 50%, $light 50%);
     padding-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(0deg, #eaeaea 80%, #ffffff 80%);
+    background: linear-gradient(0deg, $light-grey-5 80%, $light 80%);
     padding-bottom: 0;
   }
 }
@@ -49,7 +49,7 @@
 }
 
 .example__comment {
-  color: #444444;
+  color: $dark-grey;
   margin: 0 0 20px 0;
 
   @media (min-width: $tablet-width) {
@@ -86,8 +86,8 @@
 }
 
 .example__number {
-  font-family: "Oswald", sans-serif;
-  color: #000000;
+  font-family: $oswald;
+  color: $dark;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -99,7 +99,7 @@
 }
 
 .example__description {
-  color: #444444;
+  color: $dark-grey;
   font-size: 12px;
   line-height: 12px;
 
@@ -133,8 +133,8 @@
 
 .example__subtitle,
 .example__sum {
-  font-family: "Oswald", sans-serif;
-  color: #000000;
+  font-family: $oswald;
+  color: $dark;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;

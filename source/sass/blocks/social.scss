@@ -8,7 +8,7 @@
   padding: 20px 0;
   list-style-type: none;
 
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $light-grey-6;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -19,6 +19,6 @@
 .social__link {
   display: block;
 
-  color: #000000;
+  color: $dark;
   text-decoration: none;
 }
