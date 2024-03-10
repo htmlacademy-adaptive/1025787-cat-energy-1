@@ -4,14 +4,13 @@
 
 .main-inner__wrapper {
   width: 100%;
+  max-width: 1220px;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 60px);
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(100% - 220px);
     margin: 0 auto;
   }
 }

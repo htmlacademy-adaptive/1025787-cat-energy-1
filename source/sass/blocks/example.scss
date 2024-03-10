@@ -13,24 +13,22 @@
 }
 
 .example__wrapper {
-  width: calc(100% - 40px);
+  width: 100%;
+  max-width: $max-width;
   margin: 0 auto;
+  padding: 0 20px;
   padding-top: 25px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 60px);
-    margin: 0 auto;
-
+    padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(100% - 220px);
-    margin: 0 auto;
-
+    padding: 0;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     padding-bottom: 75px;
