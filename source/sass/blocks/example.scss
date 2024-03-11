@@ -36,6 +36,8 @@
 }
 
 .example__title {
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
   }
