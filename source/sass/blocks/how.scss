@@ -41,6 +41,7 @@
     column-gap: 130px;
     row-gap: 37px;
     padding: 0;
+    counter-reset: how__list-number;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,19 +51,39 @@
 }
 
 .how__item {
+  position: relative;
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     padding: 150px 0 57px 0;
+
+    &::before {
+      position: absolute;
+      min-width: 112px;
+      height: 280px;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: $light-grey;
+      counter-increment: how__list-number;
+      content: counter(how__list-number);
+      top: 0;
+      left: 113px;
+      z-index: -1;
+    }
   }
 }
 
 .how__description {
+  display: block;
   color: $dark-grey;
 
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    max-width: 245px;
+
     font-size: 16px;
     line-height: 24px;
   }
