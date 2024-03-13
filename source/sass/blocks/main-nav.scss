@@ -69,6 +69,10 @@
   }
 }
 
+.main-nav__toggle--nojs {
+  display: none;
+}
+
 .main-nav__toggle--active {
   &::before,
   &::after {
@@ -113,6 +117,15 @@
 
 .main-nav__list--active {
   display: block;
+}
+
+.main-nav__list--nojs {
+  position: static;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__item {
