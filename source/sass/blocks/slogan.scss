@@ -1,26 +1,68 @@
 .slogan {
+  position: relative;
+
   font-family: $oswald;
   color: $light;
   font-size: 14px;
   line-height: 100%;
 
-  background: linear-gradient(180deg, $basic-green 60%, $light 60%);
-  background-image: url("../img/green-cat.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-
   margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 302px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/index-background.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 302px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg,
+      #5eaa2f 0,
+      #5eaa2f calc(50% - 159px),
+      #ffffff00 calc(50% - 159px),
+      #ffffff00 calc(50% + 160px),
+      #5eaa2f calc(50% + 160px),
+      #5eaa2f 100%);
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     color: $dark;
     background: none;
 
     margin-bottom: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
-    background: linear-gradient(270deg, $basic-green 50%, $light 50%);
+
+    &::before {
+      display: block;
+      width: 50%;
+      height: 694px;
+      top: -120px;
+      transform: none;
+      background-image: url("../img/index-background-1.png");
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
   }
 }
 
@@ -31,11 +73,13 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    min-height: 875px;
     padding: 0 30px;
     padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 574px;
     padding: 0;
     padding-top: 110px;
   }
@@ -80,6 +124,21 @@
 
 .slogan__image {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 266px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 40%;
+    transform: none;
+    z-index: 1;
+  }
 }
 
 .slogan__choose-program {

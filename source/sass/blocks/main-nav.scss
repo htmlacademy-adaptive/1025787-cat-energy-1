@@ -107,11 +107,13 @@
   padding: 0;
   list-style-type: none;
   background-color: $light;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
     column-gap: 33px;
+    background: none;
   }
 }
 
@@ -182,6 +184,16 @@
       width: 100%;
       background-color: $basic-green;
       top: 34px;
+    }
+  }
+}
+
+.main-nav__link--light {
+  @media (min-width: $desktop-width) {
+    color: $light;
+
+    &::before {
+      background-color: $light;
     }
   }
 }
