@@ -124,7 +124,7 @@
 }
 
 .optionally__gift {
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     grid-column: 4 / 5;
