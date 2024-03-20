@@ -15,7 +15,12 @@
 }
 
 .optionally__title {
+  @media (min-width: $tablet-width) {
+    transform: translateX(40px);
+  }
+
   @media (min-width: $desktop-width) {
+    transform: translateX(0);
     grid-column: 1 / -1;
   }
 }

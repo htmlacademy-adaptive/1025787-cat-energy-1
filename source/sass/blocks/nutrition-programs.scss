@@ -52,78 +52,42 @@
 }
 
 .nutrition-programs__item--slim {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 53px;
-    top: 21px;
-    left: 20px;
-    background-image: url("../img/cat_slim.svg");
-    background-repeat: no-repeat;
-    background-size: 50px 53px;
-  }
+  background-image: url("../img/cat_slim.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  background-position-x: 20px;
+  background-position-y: 21px;
 
   @media (min-width: $tablet-width) {
-    &::before {
-      width: 200px;
-      height: 211px;
-      top: 81px;
-      left: auto;
-      right: 63px;
-      background-size: 200px 211px;
-    }
+    background-size: 200px 211px;
+    background-position-x: calc(100% - 63px);
+    background-position-y: 81px;
   }
 
   @media (min-width: $desktop-width) {
-    &::before {
-      width: 100px;
-      height: 106px;
-      top: 41px;
-      left: 52px;
-      right: auto;
-      background-size: 100px 106px;
-    }
+    background-size: 100px 106px;
+    background-position-x: 52px;
+    background-position-y: 41px;
   }
 }
 
 .nutrition-programs__item--pro {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 67px;
-    height: 50px;
-    top: 24px;
-    left: 13px;
-    background-image: url("../img/cat_pro.svg");
-    background-repeat: no-repeat;
-    background-size: 67px 50px;
-  }
+  background-image: url("../img/cat_pro.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
+  background-position-x: 13px;
+  background-position-y: 24px;
 
   @media (min-width: $tablet-width) {
-    &::before {
-      width: 268px;
-      height: 200px;
-      top: 91px;
-      left: auto;
-      right: 29px;
-      background-size: 268px 200px;
-    }
+    background-size: 268px 200px;
+    background-position-x: calc(100% - 29px);
+    background-position-y: 91px;
   }
 
   @media (min-width: $desktop-width) {
-    &::before {
-      width: 134px;
-      height: 100px;
-      top: 47px;
-      left: 33px;
-      right: auto;
-      background-size: 134px 100px;
-    }
+    background-size: 134px 100px;
+    background-position-x: 33px;
+    background-position-y: 47px;
   }
 }
 

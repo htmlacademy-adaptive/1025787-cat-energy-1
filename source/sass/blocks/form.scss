@@ -258,7 +258,7 @@
   }
 }
 
-.form__control-mark {
+.form__mark {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,7 +268,6 @@
   width: 30px;
   height: 30px;
   border: 1px solid $light-grey-4;
-  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -276,7 +275,11 @@
   }
 }
 
-.form__mark--radio:checked + .form__control-mark::before {
+.form__mark--radio {
+  border-radius: 50%;
+}
+
+.form__radio:checked + .form__mark::before {
   position: absolute;
   content: "";
   width: 13px;
@@ -290,11 +293,7 @@
   }
 }
 
-.form__item--checkbox .form__control-mark {
-  border-radius: 0;
-}
-
-.form__mark--checkbox:checked + .form__control-mark::before {
+.form__checkbox:checked + .form__mark::before {
   position: absolute;
   content: "";
   width: 26px;
