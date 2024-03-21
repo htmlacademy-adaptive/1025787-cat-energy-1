@@ -73,6 +73,7 @@
   margin: 0 0 20px 0;
   min-height: 70px;
   justify-items: center;
+  align-items: start;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
@@ -93,26 +94,13 @@
   row-gap: 9px;
   flex-direction: column;
   align-items: center;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 124px;
-    height: 70px;
-    background-image: url("../img/border-back.svg");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 124px 70px;
-  }
+  width: 124px;
+  border: 1px solid $light-grey-4;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     row-gap: 11px;
-
-    &::before {
-      width: 162px;
-      height: 72px;
-      background-size: 162px 72px;
-    }
+    width: 162px;
   }
 }
 
@@ -139,11 +127,20 @@
   text-align: center;
   max-width: 80px;
   margin: 0;
+  margin-bottom: -15px;
+  background-color: $light-grey-5;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    max-width: 150px;
+    padding: 0 8px;
+    max-width: 142px;
+    margin-bottom: -6px;
+    background-color: $light;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $light-grey-5;
   }
 }
 
@@ -191,6 +188,11 @@
 }
 
 .example__slider {
+  width: 280px;
+  height: 256px;
+  position: relative;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
   }
@@ -198,5 +200,56 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
+  }
+}
+
+.example__before {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  z-index: 2;
+  background-color: $light-grey-5;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(0deg, $light-grey-5 97%, $light 97%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(0deg, $light-grey-5 52%, $light 52%);
+  }
+}
+
+.example__after {
+  position: absolute;
+}
+
+.example__slider-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  background-color: #666666;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/thumb.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+    left: auto;
+    right: calc(50% - 20px);
   }
 }
