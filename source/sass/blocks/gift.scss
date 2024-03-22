@@ -9,9 +9,9 @@
 
   background-image: url("../img/cat-case.png");
   background-repeat: no-repeat;
-  background-color: $basic-green-2;
+  background-color: $basic-green;
   background-position: center;
-  background-size: 280px 290px;
+  background-size: cover;
 
   &::before {
     content: "";
@@ -27,12 +27,8 @@
     flex-direction: row;
     column-gap: 264px;
     row-gap: 0;
-    width: 100%;
     height: 200px;
     background-image: url("../img/cat-case-2.png");
-    background-color: $basic-green-2;
-    background-position: center;
-    background-size: 707px 200px;
 
     &::before {
       content: "";
@@ -46,10 +42,8 @@
     flex-direction: column;
     column-gap: 0;
     row-gap: 46px;
-    width: 100%;
     height: 288px;
     background-image: url("../img/cat-case.png");
-    background-size: 245px 288px;
   }
 }
 
