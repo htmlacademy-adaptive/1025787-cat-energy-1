@@ -138,7 +138,9 @@
 }
 
 .nutrition-programs__link {
-  display: block;
+  position: relative;
+  display: flex;
+  align-items: center;
   width: max-content;
 
   font-family: $oswald;
@@ -150,13 +152,33 @@
 
   padding: 4px 40px 4px 0;
 
-  background-image: url("../img/arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 12px;
-  background-position: right center;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 12px;
+    right: 0;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 12px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 12px;
+    right: 24px;
+    background-color: $light-grey;
+    z-index: 1;
+  }
+
+  &::after,
+  &::before {
+    transform: translateX(-8px);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: auto;
   }
 }
