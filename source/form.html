@@ -88,13 +88,17 @@
               <span class="subtitle__text">Контактные&nbsp;данные (владельца&nbsp;кота)</span>
             </legend>
             <ul class="form__list form__list--owner">
-              <li class="form__item">
+              <li class="form__item form__item--owner">
                 <label class="form__label" for="owner-mail">E-mail:*</label>
-                <input class="form__input" type="email" id="owner-mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+                <div class="form__input-mail">
+                  <input class="form__input form__input--owner" type="email" id="owner-mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+                </div>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--owner">
                 <label class="form__label" for="owner-number">Телефон:*</label>
-                <input class="form__input" type="tel" id="owner-number" name="owner-number" placeholder="8 (960) 900-60-90" required>
+                <div class="form__input-tel">
+                  <input class="form__input form__input--owner" type="tel" id="owner-number" name="owner-number" placeholder="8 (960) 900-60-90" required>
+                </div>
               </li>
             </ul>
           </fieldset>
