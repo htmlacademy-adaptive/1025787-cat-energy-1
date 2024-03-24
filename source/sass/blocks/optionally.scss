@@ -1,5 +1,5 @@
 .optionally {
-  padding: 0 20px;
+  padding: 25px 20px 0 20px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -15,7 +15,12 @@
 }
 
 .optionally__title {
+  @media (min-width: $tablet-width) {
+    transform: translateX(40px);
+  }
+
   @media (min-width: $desktop-width) {
+    transform: translateX(0);
     grid-column: 1 / -1;
   }
 }
@@ -25,7 +30,7 @@
   padding: 0;
   list-style-type: none;
 
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $light-grey-4;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
@@ -42,7 +47,7 @@
   grid-template-columns: 2fr 1fr;
 
   padding: 13px 0 19px 0;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $light-grey-4;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 4fr 3fr 1fr;
@@ -65,8 +70,8 @@
   display: block;
   grid-column: 1 / -1;
 
-  font-family: "Oswald", sans-serif;
-  color: #222222;
+  font-family: $oswald;
+  color: $dark-grey-2;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -82,7 +87,7 @@
 
 .optionally__type,
 .optionally__price {
-  color: #444444;
+  color: $dark-grey;
   font-size: 14px;
   line-height: 14px;
 
@@ -109,9 +114,15 @@
 
 .optionally__price {
   justify-self: end;
+  padding-right: 14px;
+  background-image: url("../img/ruble.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 16px;
+  background-position: right center;
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
+    background-size: 10px 20px;
   }
 }
 
@@ -124,7 +135,7 @@
 }
 
 .optionally__gift {
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     grid-column: 4 / 5;

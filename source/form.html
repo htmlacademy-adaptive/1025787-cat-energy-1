@@ -14,10 +14,12 @@
           <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Супер-кот">
           <img class="main-nav__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Интернет-магазин «CAT ENERGY»">
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+          <!-- При начажатии на button js: добавляет класс "main-nav__toggle--active" и удаляет класс "main-nav__toggle--nojs" -->
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--nojs">
+          <!-- При начажатии на button js: добавляет класс "main-nav__list--active" и удаляет класс "main-nav__list--nojs" -->
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -33,11 +35,11 @@
 
     <main class="main-inner">
       <div class="main-inner__wrapper main-inner__wrapper--form">
-        <h1 class="title">Подбор программы</h1>
+        <h1 class="main-inner__title title">Подбор программы</h1>
         <p class="main-inner__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__wrapper">
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--parameters">
               <legend class="visually-hidden">Параметры кота</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -56,22 +58,25 @@
             </fieldset>
             <fieldset class="form__group form__group--radio">
               <legend class="visually-hidden">Цель питания</legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list--radio">
+                <li class="form__item form__item--radio">
                   <label class="form__control">
-                    <input class="form__mark form__mark--radio" type="radio" name="purpose" value="slim" checked>
+                    <input class="visually-hidden form__radio" type="radio" name="purpose" value="slim" checked>
+                    <span class="form__mark form__mark--radio"></span>
                     Похудение
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--radio">
                   <label class="form__control">
-                    <input class="form__mark form__mark--radio" type="radio" name="purpose" value="pro">
+                    <input class="visually-hidden form__radio" type="radio" name="purpose" value="pro">
+                    <span class="form__mark form__mark--radio"></span>
                     Набор массы
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--radio">
                   <label class="form__control">
-                    <input class="form__mark form__mark--radio" type="radio" name="purpose" value="unknown">
+                    <input class="visually-hidden form__radio" type="radio" name="purpose" value="unknown">
+                    <span class="form__mark form__mark--radio"></span>
                     Не знаю (нужен ваш совет)
                   </label>
                 </li>
@@ -79,47 +84,61 @@
             </fieldset>
           </div>
           <fieldset class="form__group form__group--owner-mail">
-            <legend class="form__group-title subtitle">Контактные данные (владельца кота)</legend>
+            <legend class="form__group-title subtitle">
+              <span class="subtitle__text">Контактные&nbsp;данные (владельца&nbsp;кота)</span>
+            </legend>
             <ul class="form__list form__list--owner">
-              <li class="form__item">
+              <li class="form__item form__item--owner">
                 <label class="form__label" for="owner-mail">E-mail:*</label>
-                <input class="form__input" type="email" id="owner-mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+                <div class="form__input-mail">
+                  <input class="form__input form__input--owner" type="email" id="owner-mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+                </div>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--owner">
                 <label class="form__label" for="owner-number">Телефон:*</label>
-                <input class="form__input" type="tel" id="owner-number" name="owner-number" placeholder="8 (960) 900-60-90" required>
+                <div class="form__input-tel">
+                  <input class="form__input form__input--owner" type="tel" id="owner-number" name="owner-number" placeholder="8 (960) 900-60-90" required>
+                </div>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__group-title subtitle">Комментарий</legend>
+            <legend class="form__group-title subtitle">
+              <span class="subtitle__text">Комментарий</span>
+            </legend>
             <label class="visually-hidden" for="comment">О коте:</label>
             <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__group form__group--checkbox">
-            <legend class="form__group-title subtitle">Дополнительно</legend>
+            <legend class="form__group-title subtitle">
+              <span class="subtitle__text">Дополнительно</span>
+            </legend>
             <ul class="form__list form__list--checkbox">
               <li class="form__item form__item--checkbox">
                 <label class="form__control">
-                  <input class="form__mark form__mark--checkbox" type="checkbox" name="sweetener" checked>
+                  <input class="visually-hidden form__checkbox" type="checkbox" name="sweetener" checked>
+                  <span class="form__mark"></span>
                   Сахарозаменитель
                 </label>
               </li>
               <li class="form__item form__item--checkbox">
                 <label class="form__control">
-                  <input class="form__mark form__mark--checkbox" type="checkbox" name="water">
+                  <input class="visually-hidden form__checkbox" type="checkbox" name="water">
+                  <span class="form__mark"></span>
                   Питьевая вода
                 </label>
               </li>
               <li class="form__item form__item--checkbox">
                 <label class="form__control">
-                  <input class="form__mark form__mark--checkbox" type="checkbox" name="milk">
+                  <input class="visually-hidden form__checkbox" type="checkbox" name="milk">
+                  <span class="form__mark"></span>
                   Молоко
                 </label>
               </li>
               <li class="form__item form__item--checkbox">
                 <label class="form__control">
-                  <input class="form__mark form__mark--checkbox" type="checkbox" name="vitamins">
+                  <input class="visually-hidden form__checkbox" type="checkbox" name="vitamins">
+                  <span class="form__mark"></span>
                   Витамины
                 </label>
               </li>
@@ -186,7 +205,12 @@
         <!-- Элемент подвала с HTML Academy -->
         <div class="main-footer__copyright">
           <b class="visually-hidden">Разработано:</b>
-          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+            <svg class="main-footer__copyright-image" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
+              <path fill="#666666" d="M13.64.52 13.5.5 0 1.9v24.61l13.5 7.99L27 26.51V1.91L13.64.5Zm11.6 25L13.5 32.46 1.77 25.52v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V17.4l3.62-2.15v10.26Zm0-11.57L22 15.83l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 14.08l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.8 1.77 12.72V3.49L13.5 2.26 25.23 3.5v9.24Z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

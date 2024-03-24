@@ -1,22 +1,48 @@
 .subtitle {
-  font-family: "Oswald", sans-serif;
-  color: #000000;
+  display: block;
+  position: relative;
+  font-family: $oswald;
+  color: $dark;
   font-size: 24px;
   line-height: 24px;
   text-transform: none;
 
   margin: 0 0 14px 0;
-  padding: 25px 0 0 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 200vw;
+    height: 2px;
+    background: $basic-green;
+    transform: translateX(-100vw);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
 
     margin-bottom: 80px;
-    padding: 0 0 0 40px;
-  }
-
-  @media (min-width: $desktop-width) {
     padding: 0;
+  }
+}
+
+.subtitle__text {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: $light;
+  transform: translateX(-20px);
+  width: min-content;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+    transform: translateX(-40px);
+    width: auto;
   }
 }

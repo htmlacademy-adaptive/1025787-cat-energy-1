@@ -1,11 +1,38 @@
 .show-more {
-  padding: 25px 0;
+  padding: 25px 0 0 0;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    top: 25px;
+    left: calc(50% - 15px);
+    background-color: #d3d3d3;
+  }
+
+  &::after {
+    rotate: 90deg;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0 0 0;
+
+    &::before,
+    &::after {
+      top: 52px;
+      width: 60px;
+      left: calc(50% - 30px);
+    }
+  }
 }
 
 .show-more__title {
   display: block;
-  font-family: "Oswald", sans-serif;
-  color: #111111;
+  font-family: $oswald;
+  color: $dark-2;
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
@@ -26,7 +53,7 @@
 }
 
 .show-more__text {
-  color: #444444;
+  color: $dark-grey;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
@@ -45,8 +72,8 @@
 .show-more__button {
   display: block;
 
-  font-family: "Oswald", sans-serif;
-  color: #444444;
+  font-family: $oswald;
+  color: $dark-grey;
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
@@ -55,5 +82,5 @@
 
   padding: 10px;
 
-  background-color: #f2f2f2;
+  background-color: $light-grey;
 }

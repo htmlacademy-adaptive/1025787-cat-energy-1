@@ -1,24 +1,68 @@
 .gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 48px;
+  width: 100%;
   height: 290px;
 
   background-image: url("../img/cat-case.png");
   background-repeat: no-repeat;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: $basic-green;
+  background-position: center;
+  background-size: cover;
 
-  width: 280px;
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    top: 0;
+    background-image: url("../img/catalog/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 264px;
+    row-gap: 0;
+    height: 200px;
+    background-image: url("../img/cat-case-2.png");
+
+    &::before {
+      content: "";
+      width: 80px;
+      height: 83px;
+      background-size: 80px 83px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
-    height: 285px;
-    // картинка пока старая, потом изменю на картинку с нужными параметрами
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 46px;
+    height: 288px;
+    background-image: url("../img/cat-case.png");
   }
 }
 
 .gift__title {
-  color: #ffffff;
+  display: block;
+
+  color: $light;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
 
+  max-width: 161px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
