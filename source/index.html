@@ -15,8 +15,16 @@
     <header class="main-header">
       <nav class="main-nav main-header__wrapper">
         <a class="main-nav__logo" href="#">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Супер-кот">
-          <img class="main-nav__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Интернет-магазин «CAT ENERGY»">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-pic-desktop.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-pic-tablet.svg" width="60" height="50">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Супер-кот">
+          </picture>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-text-desktop.svg" width="118" height="21">
+            <source media="(min-width: 768px)" srcset="img/logo-text-tablet.svg" width="101" height="18">
+            <img class="main-nav__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Интернет-магазин «CAT ENERGY»">
+          </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
           <!-- При начажатии на button js: добавляет класс "main-nav__toggle--active" и удаляет класс "main-nav__toggle--nojs" -->
@@ -148,7 +156,7 @@
       <div class="main-footer__wrapper">
         <!-- Элемент подвала с логотипом -->
         <a class="main-footer__logo" href="#">
-          <img src="img/logo-text.svg" width="128" height="24" alt="Интернет-магазин «CAT ENERGY»">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин «CAT ENERGY»">
         </a>
         <!-- Элемент подвала - блок с социальными сетями -->
         <ul class="social">
