@@ -124,11 +124,17 @@
           <div class="example__slider">
             <!-- Картика "до" -->
             <div class="example__before">
-              <img class="example__slider-image" src="img/cat-before-1x.png" alt="Толстый кот">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x" width="560" height="512">
+                <img src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+              </picture>
             </div>
             <!-- Картинка "после" -->
             <div class="example__after">
-              <img class="example__slider-image" src="img/cat-after-1x.png" alt="Худой кот">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <img src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+              </picture>
             </div>
             <!-- Кнопка-ползунок -->
             <button class="example__slider-button" type="button">
