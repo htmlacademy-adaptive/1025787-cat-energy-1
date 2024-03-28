@@ -2,13 +2,15 @@
   background-color: $light-grey-5;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, $light-grey-5 50%, $light 50%);
+    background: linear-gradient(0deg, $light-grey-5 421px, $light 421px);
     padding-bottom: 100px;
+    min-height: 935px;
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(0deg, $light-grey-5 80%, $light 80%);
+    background: linear-gradient(0deg, $light-grey-5 462px, $light 462px);
     padding-bottom: 0;
+    min-height: auto;
   }
 }
 
@@ -195,11 +197,15 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
+    width: 560px;
+    height: 512px;
+    margin-top: 100px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
+    margin: 0;
   }
 }
 
@@ -213,11 +219,11 @@
   background-color: $light-grey-5;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, $light-grey-5 97%, $light 97%);
+    background: linear-gradient(0deg, $light-grey-5 324px, $light 324px);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(0deg, $light-grey-5 52%, $light 52%);
+    background: linear-gradient(0deg, $light-grey-5 354px, $light 354px);
   }
 }
 

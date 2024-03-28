@@ -31,14 +31,9 @@
   }
 }
 
-.main-nav__logo-image {
-  grid-column: 1 / 2;
-  justify-self: start;
-}
-
 .main-nav__logo-text {
-  grid-column: 2 / 3;
-  justify-self: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {

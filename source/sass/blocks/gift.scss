@@ -7,11 +7,15 @@
   width: 100%;
   height: 290px;
 
-  background-image: url("../img/cat-case.png");
+  background-image: url("../img/catalog/cat-case-mobile.png");
   background-repeat: no-repeat;
   background-color: $basic-green;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/cat-case-mobile@2x.png");
+  }
 
   &::before {
     content: "";
@@ -28,7 +32,11 @@
     column-gap: 264px;
     row-gap: 0;
     height: 200px;
-    background-image: url("../img/cat-case-2.png");
+    background-image: url("../img/catalog/cat-case-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/cat-case-tablet@2x.png");
+    }
 
     &::before {
       content: "";
@@ -43,7 +51,11 @@
     column-gap: 0;
     row-gap: 46px;
     height: 288px;
-    background-image: url("../img/cat-case.png");
+    background-image: url("../img/catalog/cat-case-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/cat-case-mobile@2x.png");
+    }
   }
 }
 

@@ -161,6 +161,10 @@
 
 .form__item--owner {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__label {
@@ -214,11 +218,11 @@
 }
 
 .form__input-mail::after {
-  background-image: url("../img/email-stroke.svg");
+  background-image: url("../img/icons/email-stroke.svg");
 }
 
 .form__input-tel::after {
-  background-image: url("../img/phone-stroke.svg");
+  background-image: url("../img/icons/phone-stroke.svg");
 }
 
 .form__input--owner {
@@ -344,7 +348,7 @@
   content: "";
   width: 26px;
   height: 26px;
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/icons/tick.svg");
   background-repeat: no-repeat;
   background-size: 26px 26px;
 }

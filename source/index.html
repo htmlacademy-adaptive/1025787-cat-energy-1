@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин «CAT ENERGY»</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <!-- Шапка сайта -->
     <header class="main-header">
       <nav class="main-nav main-header__wrapper">
         <a class="main-nav__logo" href="#">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Супер-кот">
-          <img class="main-nav__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Интернет-магазин «CAT ENERGY»">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-pic-desktop.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-pic-tablet.svg" width="60" height="50">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Супер-кот">
+          </picture>
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-text-desktop.svg" width="118" height="21">
+            <source media="(min-width: 768px)" srcset="img/logo-text-tablet.svg" width="101" height="18">
+            <img class="main-nav__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Интернет-магазин «CAT ENERGY»">
+          </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
           <!-- При начажатии на button js: добавляет класс "main-nav__toggle--active" и удаляет класс "main-nav__toggle--nojs" -->
@@ -43,7 +55,11 @@
             <p class="slogan__text">Занялся собой? Займись котом!</p>
           </header>
           <div class="slogan__image">
-            <img src="img/can-of-cat-food.png" width="280" height="270" alt="Банка корма для кота">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/can-food-desktop.png 1x, img/can-food-desktop@2x.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/can-food-tablet.png 1x, img/can-food-tablet@2x.png 2x" width="709" height="609">
+              <img src="img/can-food-mobile.png" srcset="img/can-food-mobile@2x.png 2x" width="280" height="270" alt="Банка корма для кота">
+            </picture>
           </div>
           <a class="button slogan__choose-program" href="form.html">Подобрать программу</a>
         </div>
@@ -108,11 +124,17 @@
           <div class="example__slider">
             <!-- Картика "до" -->
             <div class="example__before">
-              <img class="example__slider-image" src="img/cat-before-1x.png" alt="Толстый кот">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x" width="560" height="512">
+                <img src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+              </picture>
             </div>
             <!-- Картинка "после" -->
             <div class="example__after">
-              <img class="example__slider-image" src="img/cat-after-1x.png" alt="Худой кот">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <img src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+              </picture>
             </div>
             <!-- Кнопка-ползунок -->
             <button class="example__slider-button" type="button">
@@ -144,7 +166,7 @@
       <div class="main-footer__wrapper">
         <!-- Элемент подвала с логотипом -->
         <a class="main-footer__logo" href="#">
-          <img src="img/logo-text.svg" width="128" height="24" alt="Интернет-магазин «CAT ENERGY»">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин «CAT ENERGY»">
         </a>
         <!-- Элемент подвала - блок с социальными сетями -->
         <ul class="social">
