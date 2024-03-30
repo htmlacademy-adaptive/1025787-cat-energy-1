@@ -184,6 +184,16 @@
 
   border: 1px solid $light-grey-7;
 
+  &:hover {
+    border-color: $light-grey-4;
+  }
+
+  &:active,
+  &:focus-visible {
+    outline: none;
+    border-color: $dark-grey;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -302,6 +312,10 @@
   position: relative;
   display: block;
   padding: 6px 0 6px 45px;
+
+  &:hover .form__mark {
+    border: 1px solid $light-grey-8;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 11px 0 11px 60px;

@@ -12,4 +12,12 @@
   padding: 10px;
 
   background-color: $basic-green;
+
+  &:hover {
+    background-color: $basic-green-3;
+  }
+
+  &:active {
+    color: rgba($color: $light, $alpha: 0.3);
+  }
 }
