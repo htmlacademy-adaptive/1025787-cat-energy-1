@@ -130,8 +130,8 @@
 
   @media (min-width: $desktop-width) {
     top: 29px;
-    left: 39%;
-    transform: none;
+    left: 50%;
+    transform: translateX(-163px);
     z-index: 1;
   }
 }
