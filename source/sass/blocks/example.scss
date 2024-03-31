@@ -258,4 +258,12 @@
     left: auto;
     right: calc(50% - 20px);
   }
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
