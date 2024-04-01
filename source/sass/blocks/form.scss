@@ -171,6 +171,40 @@
   margin-right: 13px;
 }
 
+.form__input-mail,
+.form__input-tel {
+  flex-grow: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 13px;
+    right: 12px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-color: $dark;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+      right: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 16px;
+    }
+  }
+}
+
+.form__input-mail::after {
+  mask-image: url("../img/sprite.svg#email-stroke");
+}
+
+.form__input-tel::after {
+  mask-image: url("../img/sprite.svg#phone-stroke");
+}
+
 .form__input {
   flex-grow: 1;
 
@@ -202,37 +236,11 @@
   }
 }
 
-.form__input-mail,
-.form__input-tel {
-  flex-grow: 1;
-
+.form__input-mail:has(.form__input:focus-visible),
+.form__input-tel:has(.form__input:focus-visible) {
   &::after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    top: 13px;
-    right: 12px;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-
-    @media (min-width: $tablet-width) {
-      top: 16px;
-      right: 14px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 16px;
-    }
+    background-color: $basic-green;
   }
-}
-
-.form__input-mail::after {
-  background-image: url("../img/icons/email-stroke.svg");
-}
-
-.form__input-tel::after {
-  background-image: url("../img/icons/phone-stroke.svg");
 }
 
 .form__input--owner {
