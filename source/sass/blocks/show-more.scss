@@ -83,4 +83,12 @@
   padding: 10px;
 
   background-color: $light-grey;
+
+  &:hover {
+    background-color: $light-grey-2;
+  }
+
+  &:active {
+    background-color: $light-grey-2;
+  }
 }

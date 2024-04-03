@@ -23,11 +23,26 @@
   height: 65px;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 12px;
 
     padding: 0;
+  }
+}
+
+.main-nav__logo--active {
+  &:hover,
+  &:active {
+    opacity: 1;
   }
 }
 
@@ -157,6 +172,14 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    color: rgba($color: $dark, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: $dark, $alpha: 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
@@ -187,8 +210,30 @@
   @media (min-width: $desktop-width) {
     color: $light;
 
+    &:hover {
+      color: rgba($color: $light, $alpha: 0.6);
+    }
+
+    &:active {
+      color: rgba($color: $light, $alpha: 0.3);
+    }
+
     &::before {
       background-color: $light;
+    }
+  }
+}
+
+.main-nav__link.main-nav__link--active {
+  &:hover,
+  &:active {
+    color: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:active {
+      color: $light;
     }
   }
 }

@@ -29,6 +29,14 @@
 
   border-bottom: 1px solid $light-grey-6;
 
+  &:hover .main-footer__logotype {
+    fill: #3e3e3e;
+  }
+
+  &:active .main-footer__logotype {
+    fill: #6b6b6b;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: left;
     padding: 0;
@@ -53,6 +61,18 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+
+  .main-footer__copyright-image {
+    fill: #666666;
+  }
+
+  &:hover .main-footer__copyright-image {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     column-gap: 23px;

@@ -150,7 +150,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  padding: 4px 40px 4px 0;
+  padding: 4px 57px 4px 0;
 
   &::after {
     position: absolute;
@@ -181,4 +181,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+.nutrition-programs__link:hover::after {
+  transform: translateX(0);
+}
+
+.nutrition-programs__link:active {
+  opacity: 0.3;
 }

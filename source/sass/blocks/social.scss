@@ -21,4 +21,16 @@
 
   color: $dark;
   text-decoration: none;
+
+  .social__image {
+    fill: #666666;
+  }
+
+  &:hover .social__image {
+    fill: $basic-green;
+  }
+
+  &:active .social__image {
+    fill: rgba($color: $basic-green, $alpha: 0.3);
+  }
 }
