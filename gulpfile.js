@@ -4,7 +4,12 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
+// import del from 'del';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 
@@ -23,12 +28,43 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-//HTML
+// HTML
 
 export const html = () => {
-  return gulp.src('source/*html')
+  return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
+}
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src('source/js/*.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
+}
+
+//Images
+
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(gulp.dest('build/img'))
+}
+
+//WebP
+
+const createWebp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(squoosh({
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img'))
 }
 
 // Server
@@ -49,6 +85,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
