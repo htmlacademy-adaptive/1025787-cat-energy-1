@@ -56,14 +56,17 @@
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label" for="cat-name">Имя:*</label>
+                  <!-- Если ошибка - добавть класс "form__input--error" -->
                   <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="cat-weight">Вес (кг):*</label>
+                  <!-- Если ошибка - добавть класс "form__input--error" -->
                   <input class="form__input" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
                 </li>
                 <li class="form__item">
                   <label class="form__label" for="cat-age">Возраст (лет):</label>
+                  <!-- Если ошибка - добавть класс "form__input--error" -->
                   <input class="form__input" type="text" id="cat-age" name="cat-age" placeholder="7">
                 </li>
               </ul>
@@ -103,12 +106,14 @@
               <li class="form__item form__item--owner">
                 <label class="form__label" for="owner-mail">E-mail:*</label>
                 <div class="form__input-mail">
+                  <!-- Если ошибка - добавть класс "form__input--error" -->
                   <input class="form__input form__input--owner" type="email" id="owner-mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
                 </div>
               </li>
               <li class="form__item form__item--owner">
                 <label class="form__label" for="owner-number">Телефон:*</label>
                 <div class="form__input-tel">
+                  <!-- Если ошибка - добавть класс "form__input--error" -->
                   <input class="form__input form__input--owner" type="tel" id="owner-number" name="owner-number" placeholder="8 (960) 900-60-90" required>
                 </div>
               </li>
