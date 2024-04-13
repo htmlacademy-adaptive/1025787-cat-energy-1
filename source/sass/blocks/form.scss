@@ -198,11 +198,11 @@
 }
 
 .form__input-mail::after {
-  mask-image: url("../img/sprite.svg#email-stroke");
+  mask-image: url("../img/email-stroke.svg");
 }
 
 .form__input-tel::after {
-  mask-image: url("../img/sprite.svg#phone-stroke");
+  mask-image: url("../img/phone-stroke.svg");
 }
 
 .form__input {
@@ -370,7 +370,7 @@
   content: "";
   width: 26px;
   height: 26px;
-  background-image: url("../img/icons/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-size: 26px 26px;
 }

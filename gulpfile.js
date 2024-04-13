@@ -9,7 +9,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
-// import del from 'del';
+import {deleteAsync} from 'del';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 
@@ -30,7 +30,7 @@ export const styles = () => {
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
@@ -61,10 +61,47 @@ const copyImages = () => {
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(squoosh({
-    webp: {}
-  }))
-  .pipe(gulp.dest('build/img'))
+    .pipe(squoosh({
+      webp: {}
+    }))
+    .pipe(gulp.dest('build/img'))
+}
+
+//SVG
+
+const svg = () => {
+  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'))
+}
+
+const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore(
+      {inlineSvg: true}
+    ))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'))
+}
+
+//Copy
+const copy = (done) => {
+  gulp.src([
+    'source/fonts/**/*.{woff2,woff}',
+    'source/*.ico',
+    'source/*webmanifest'
+  ], {
+    base:'source'
+  })
+    .pipe(gulp.dest('build'))
+  done();
+}
+
+//Clean
+
+const clean = () => {
+  return deleteAsync('build');
 }
 
 // Server
@@ -81,6 +118,13 @@ const server = (done) => {
   done();
 }
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
@@ -89,7 +133,36 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+//Build
+
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
+  )
+);
+
+//Default
 
 export default gulp.series(
-  html, styles, server, watcher
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
+  ),
+  server,
+  watcher
 );
