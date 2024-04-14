@@ -198,11 +198,11 @@
 }
 
 .form__input-mail::after {
-  mask-image: url("../img/sprite.svg#email-stroke");
+  mask-image: url("../img/email-stroke.svg");
 }
 
 .form__input-tel::after {
-  mask-image: url("../img/sprite.svg#phone-stroke");
+  mask-image: url("../img/phone-stroke.svg");
 }
 
 .form__input {
@@ -225,7 +225,7 @@
   &:active,
   &:focus-visible {
     outline: none;
-    border-color: $dark-grey;
+    border: 2px solid $dark-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -243,6 +243,13 @@
   }
 }
 
+.form__input-mail:has(.form__input.form__input--error),
+.form__input-tel:has(.form__input.form__input--error) {
+  &::after {
+    background-color: #ff8282;
+  }
+}
+
 .form__input--owner {
   width: 100%;
   padding: 14px 44px 14px 15px;
@@ -250,6 +257,10 @@
   @media (min-width: $tablet-width) {
     padding: 11px 46px 11px 20px;
   }
+}
+
+.form__input.form__input--error {
+  border: 2px solid #ff8282;
 }
 
 .form__textarea {
@@ -265,6 +276,16 @@
   resize: none;
 
   border: 1px solid $light-grey-7;
+
+  &:hover {
+    border-color: $light-grey-4;
+  }
+
+  &:active,
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $dark-grey;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -321,6 +342,8 @@
   display: block;
   padding: 6px 0 6px 45px;
 
+  cursor: pointer;
+
   &:hover .form__mark {
     border: 1px solid $light-grey-8;
   }
@@ -328,6 +351,11 @@
   @media (min-width: $tablet-width) {
     padding: 11px 0 11px 60px;
   }
+}
+
+.form__control:has(input:disabled) {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .form__mark {
@@ -370,7 +398,7 @@
   content: "";
   width: 26px;
   height: 26px;
-  background-image: url("../img/icons/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-size: 26px 26px;
 }
