@@ -224,8 +224,8 @@
 
   &:active,
   &:focus-visible {
-    outline: none;
-    border: 2px solid $dark-grey;
+    border-color: $dark-grey;
+    outline: 1px solid $dark-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -283,8 +283,8 @@
 
   &:active,
   &:focus-visible {
-    outline: none;
-    border: 2px solid $dark-grey;
+    border-color: $dark-grey;
+    outline: 1px solid $dark-grey;
   }
 
   @media (min-width: $tablet-width) {
