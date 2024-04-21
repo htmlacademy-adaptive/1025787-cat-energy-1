@@ -23,9 +23,11 @@
 }
 
 .main-footer__logo {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 20px;
+  justify-self: start;
 
   border-bottom: 1px solid $light-grey-6;
 
@@ -35,6 +37,15 @@
 
   &:active .main-footer__logotype {
     fill: #6b6b6b;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+    outline-offset: 2px;
+  }
+
+  &:focus-visible .main-footer__logotype {
+    fill: #3e3e3e;
   }
 
   @media (min-width: $tablet-width) {
@@ -72,6 +83,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+    outline-offset: 2px;
+  }
+
+  &:focus-visible .main-footer__copyright-image {
+    fill: $basic-green;
   }
 
   @media (min-width: $tablet-width) {

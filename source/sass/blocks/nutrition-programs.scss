@@ -190,3 +190,8 @@
 .nutrition-programs__link:active {
   opacity: 0.3;
 }
+
+.nutrition-programs__link:focus-visible {
+  outline: 2px solid $dark-grey;
+  outline-offset: 2px;
+}

@@ -91,4 +91,9 @@
   &:active {
     background-color: $light-grey-2;
   }
+
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+    outline-offset: 0;
+  }
 }

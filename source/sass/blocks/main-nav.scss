@@ -31,6 +31,11 @@
     opacity: 0.6;
   }
 
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+    outline-offset: 2px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 12px;
@@ -178,6 +183,11 @@
 
   &:active {
     color: rgba($color: $dark, $alpha: 0.3);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+    outline-offset: 2px;
   }
 
   @media (min-width: $tablet-width) {

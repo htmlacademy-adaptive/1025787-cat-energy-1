@@ -402,3 +402,9 @@
   background-repeat: no-repeat;
   background-size: 26px 26px;
 }
+
+.form__radio:focus-visible + .form__mark,
+.form__checkbox:focus-visible + .form__mark {
+  outline: 1px solid $dark-grey;
+  border-color: $dark-grey;
+}
