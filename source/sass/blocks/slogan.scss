@@ -111,7 +111,7 @@
   font-size: 36px;
   line-height: 100%;
 
-  margin: 0 0 25px 0;
+  margin: 0 0 24px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -131,6 +131,7 @@
 
 .slogan__image {
   text-align: center;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -149,7 +150,7 @@
 }
 
 .slogan__choose-program {
-  margin: 0 30px;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
