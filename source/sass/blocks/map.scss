@@ -28,6 +28,8 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     z-index: 1;
+
+    padding: 62px 79px 60px;
   }
 }
 
@@ -60,7 +62,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 18px;
   }
 
   @media (min-width: $desktop-width) {

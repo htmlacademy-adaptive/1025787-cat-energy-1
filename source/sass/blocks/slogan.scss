@@ -47,13 +47,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 84px;
 
     &::before {
       display: block;
       width: 50%;
       height: 694px;
-      top: -120px;
+      top: -118px;
       transform: none;
       background-image: image-set(
         url("../img/cat-background-desktop.webp") type("image/webp") 1x,
@@ -80,15 +80,15 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    min-height: 875px;
+    min-height: 866px;
     padding: 0 30px;
-    padding-top: 65px;
+    padding-top: 56px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 574px;
     padding: 0;
-    padding-top: 110px;
+    padding-top: 106px;
   }
 }
 
@@ -98,12 +98,12 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     padding-left: 90px;
-    margin-bottom: 46px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 }
 
@@ -115,7 +115,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    margin: 0 0 40px 0;
+    margin: 0 0 43px 0;
   }
 }
 
@@ -135,14 +135,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 266px;
+    top: 257px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 29px;
+    top: 25px;
     left: 50%;
     transform: translateX(-163px);
     z-index: 1;
@@ -153,6 +153,9 @@
   margin: 0 20px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px;
     width: 244px;
     margin-left: 90px;
   }

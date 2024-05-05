@@ -7,12 +7,12 @@
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-    padding-top: 25px;
+    padding-top: 18px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-top: 55px;
+    padding-top: 52px;
   }
 }
 
@@ -41,6 +41,10 @@
     column-gap: 12px;
 
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 13px;
   }
 }
 
@@ -129,8 +133,12 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
-    column-gap: 33px;
+    column-gap: 30px;
     background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 33px;
   }
 }
 
@@ -159,7 +167,12 @@
     justify-content: flex-start;
     width: auto;
     padding: 0;
+    padding-right: 4px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -213,7 +226,13 @@
       height: 2px;
       width: 100%;
       background-color: $basic-green;
-      top: 34px;
+      top: 32px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 37px;
     }
   }
 }

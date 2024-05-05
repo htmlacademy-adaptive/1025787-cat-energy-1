@@ -38,9 +38,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 130px;
+    column-gap: 60px;
     row-gap: 37px;
     padding: 0;
+    margin: 0;
     counter-reset: how__list-number;
   }
 
@@ -60,7 +61,7 @@
   background-position: left top;
 
   @media (min-width: $tablet-width) {
-    padding: 150px 0 57px 0;
+    padding: 151px 0 57px 0;
 
     background-size: 80px 80px;
     background-position: left 40px;
@@ -85,18 +86,34 @@
 
 .how__item--composition {
   background-image: url("../img/how-1.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/how-1-tablet.svg");
+  }
 }
 
 .how__item--structure {
   background-image: url("../img/how-2.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/how-2-tablet.svg");
+  }
 }
 
 .how__item--exchange {
   background-image: url("../img/how-3.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/how-3-tablet.svg");
+  }
 }
 
 .how__item--result {
   background-image: url("../img/how-4.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/how-4-tablet.svg");
+  }
 }
 
 .how__description {
