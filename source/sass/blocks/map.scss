@@ -57,12 +57,10 @@
 }
 
 .map__address {
-  align-items: end;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    row-gap: 18px;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {

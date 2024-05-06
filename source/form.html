@@ -35,15 +35,15 @@
           <!-- При начажатии на button js: добавляет класс "main-nav__toggle--active" и удаляет класс "main-nav__toggle--nojs" -->
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--nojs">
+        <ul class="main-nav__list main-nav__list--form main-nav__list--nojs">
           <!-- При начажатии на button js: добавляет класс "main-nav__list--active" и удаляет класс "main-nav__list--nojs" -->
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--form">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--form">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--form">
             <a class="main-nav__link main-nav__link--active" href="#">Подбор программы</a>
           </li>
         </ul>
@@ -125,7 +125,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__group-title subtitle">
+            <legend class="form__group-title form__group-title--comment subtitle">
               <span class="subtitle__text">Комментарий</span>
             </legend>
             <label class="visually-hidden" for="comment">О коте:</label>

@@ -23,7 +23,7 @@
 .main-inner__wrapper--form {
   @media (min-width: $tablet-width) {
     padding: 0 70px;
-    padding-top: 65px;
+    padding-top: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,5 +56,9 @@
 
     margin: 54px 0 66px 0;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 29px;
   }
 }

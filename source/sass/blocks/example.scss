@@ -240,7 +240,7 @@
   align-items: center;
   z-index: 5;
   top: 0;
-  left: 278px;
+  left: 49%;
   height: 100%;
   width: 4px;
   padding: 0;
@@ -292,5 +292,9 @@
     &::before {
       background-color: rgba($color: $basic-green, $alpha: 0.6);
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 278px;
   }
 }
