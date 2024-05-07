@@ -49,6 +49,8 @@
 }
 
 .main-nav__logo--active {
+  cursor: default;
+
   &:hover,
   &:active {
     opacity: 1;
@@ -231,6 +233,7 @@
 .main-nav__link--active {
   @media (min-width: $tablet-width) {
     position: relative;
+    cursor: default;
 
     &::before {
       position: absolute;
@@ -272,7 +275,9 @@
   &:active {
     color: inherit;
   }
+}
 
+.main-nav__link--active.main-nav__link--light {
   @media (min-width: $desktop-width) {
     &:hover,
     &:active {

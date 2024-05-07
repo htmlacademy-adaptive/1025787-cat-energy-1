@@ -32,12 +32,26 @@
   }
 }
 
+.main-inner__wrapper--catalog {
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
+
 .main-inner__title {
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+}
+
+.main-inner__title--catalog {
+  margin-bottom: 37px;
 }
 
 .main-inner__text {
