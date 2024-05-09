@@ -2,11 +2,11 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 71px;
   }
 }
 
@@ -19,14 +19,14 @@
 .nutrition-programs__list {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 18px;
 
   margin: 0 20px;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    row-gap: 30px;
+    row-gap: 31px;
     margin: 0 30px;
   }
 
@@ -43,11 +43,11 @@
   padding: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 50px 52px;
+    padding: 77px 316px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 60px 55px 52px;
+    padding: 77px 60px 60px 52px;
   }
 }
 
@@ -59,9 +59,9 @@
   background-position-y: 21px;
 
   @media (min-width: $tablet-width) {
-    background-size: 200px 211px;
+    background-size: 201px 211px;
     background-position-x: calc(100% - 63px);
-    background-position-y: 81px;
+    background-position-y: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +75,7 @@
   background-image: url("../img/cat_pro.svg");
   background-repeat: no-repeat;
   background-size: 67px 50px;
-  background-position-x: 13px;
+  background-position-x: 12px;
   background-position-y: 24px;
 
   @media (min-width: $tablet-width) {
@@ -117,7 +117,7 @@
 .nutrition-programs__description {
   color: $dark-grey;
   font-size: 14px;
-  line-height: 129%;
+  line-height: 128%;
   padding-bottom: 22px;
   margin: 0 0 15px 0;
 
@@ -128,12 +128,12 @@
     line-height: 24px;
 
     padding: 0;
-    margin: 0 0 48px 0;
+    margin: 0 0 53px 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 23px 0;
+    margin: 0 0 28px 0;
   }
 }
 
@@ -150,7 +150,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  padding: 4px 57px 4px 0;
+  padding: 4px 48px 4px 0;
 
   &::after {
     position: absolute;
@@ -180,6 +180,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    padding: 4px 58px 4px 0;
   }
 }
 
@@ -189,4 +190,9 @@
 
 .nutrition-programs__link:active {
   opacity: 0.3;
+}
+
+.nutrition-programs__link:focus-visible {
+  outline: 2px solid $dark-grey;
+  outline-offset: 2px;
 }

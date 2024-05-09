@@ -13,12 +13,16 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 15px;
     left: 0;
     width: 200vw;
     height: 2px;
     background: $basic-green;
     transform: translateX(-100vw);
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
   }
 
   @media (min-width: $tablet-width) {

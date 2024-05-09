@@ -17,7 +17,9 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   color: $dark;
   text-decoration: none;
@@ -32,5 +34,14 @@
 
   &:active .social__image {
     fill: rgba($color: $basic-green, $alpha: 0.3);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+    outline-offset: 2px;
+  }
+
+  &:focus-visible .social__image {
+    fill: $basic-green;
   }
 }

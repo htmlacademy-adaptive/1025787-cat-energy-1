@@ -16,7 +16,10 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/cat-background-mobile.png");
+    background-image: image-set(
+      url("../img/cat-background-mobile.webp") type("image/webp") 1x,
+      url("../img/cat-background-mobile.png") type("image/png") 1x
+      );
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -24,7 +27,10 @@
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cat-background-mobile@2x.png");
+      background-image: image-set(
+        url("../img/cat-background-mobile@2x.webp") type("image/webp") 2x,
+        url("../img/cat-background-mobile@2x.png") type("image/png") 2x
+      );
     }
   }
 
@@ -41,21 +47,27 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 84px;
 
     &::before {
       display: block;
       width: 50%;
       height: 694px;
-      top: -120px;
+      top: -118px;
       transform: none;
-      background-image: url("../img/cat-background-desktop.png");
+      background-image: image-set(
+        url("../img/cat-background-desktop.webp") type("image/webp") 1x,
+        url("../img/cat-background-desktop.png") type("image/png") 1x
+      );
       background-repeat: no-repeat;
       background-color: $basic-green;
       z-index: 0;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/cat-background-desktop@2x.png");
+        background-image: image-set(
+          url("../img/cat-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../img/cat-background-desktop@2x.png") type("image/png") 2x
+        );
       }
     }
   }
@@ -68,15 +80,15 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    min-height: 875px;
+    min-height: 866px;
     padding: 0 30px;
-    padding-top: 65px;
+    padding-top: 56px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 574px;
     padding: 0;
-    padding-top: 110px;
+    padding-top: 106px;
   }
 }
 
@@ -86,12 +98,12 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     padding-left: 90px;
-    margin-bottom: 46px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 }
 
@@ -99,11 +111,11 @@
   font-size: 36px;
   line-height: 100%;
 
-  margin: 0 0 25px 0;
+  margin: 0 0 24px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    margin: 0 0 40px 0;
+    margin: 0 0 43px 0;
   }
 }
 
@@ -119,17 +131,18 @@
 
 .slogan__image {
   text-align: center;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 266px;
+    top: 257px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 29px;
+    top: 25px;
     left: 50%;
     transform: translateX(-163px);
     z-index: 1;
@@ -137,9 +150,12 @@
 }
 
 .slogan__choose-program {
-  margin: 0 30px;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px;
     width: 244px;
     margin-left: 90px;
   }

@@ -20,18 +20,20 @@
 }
 
 .form__wrapper {
+  margin-bottom: 28px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
 
-    margin-bottom: 50px;
+    margin-bottom: 69px;
   }
 }
 
 .form__group {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   padding: 0 20px;
   border: none;
 
@@ -51,16 +53,21 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .form__group--radio {
-  padding-bottom: 19px;
   border-bottom: 1px solid $light-grey-6;
+  margin: 0;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 72px;
-    padding: 25px 28px;
+    padding: 21px 26px;
     border: 1px solid $light-grey-7;
   }
 
@@ -70,21 +77,33 @@
 }
 
 .form__group--owner-mail {
+  margin-bottom: 0;
+
   @media (min-width: $tablet-width) {
-    margin-top: 76px;
+    margin-top: 65px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .form__group--checkbox {
-  margin-bottom: 34px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
   }
 }
 
 .form__group-title {
-  margin-bottom: 35px;
+  margin-top: 10px;
+  margin-bottom: 34px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -94,17 +113,30 @@
   }
 }
 
+.form__group-title--comment {
+  margin-bottom: 40px;
+}
+
 .form__list {
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__list--owner {
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -119,6 +151,7 @@
   flex-direction: column;
   row-gap: 13px;
   justify-content: center;
+  margin: 0 0 4px 0;
 }
 
 .form__list--checkbox {
@@ -128,6 +161,7 @@
     column-gap: 60px;
     row-gap: 32px;
     align-items: center;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -141,10 +175,10 @@
   display: flex;
   align-items: center;
 
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 }
 
@@ -224,8 +258,8 @@
 
   &:active,
   &:focus-visible {
-    outline: none;
-    border: 2px solid $dark-grey;
+    border-color: $dark-grey;
+    outline: 1px solid $dark-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -283,30 +317,37 @@
 
   &:active,
   &:focus-visible {
-    outline: none;
-    border: 2px solid $dark-grey;
+    border-color: $dark-grey;
+    outline: 1px solid $dark-grey;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
 
-    margin-top: 30px;
+    margin-top: 47px;
     height: 175px;
     padding: 11px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 22px;
+    margin-top: 36px;
     margin-bottom: 70px;
   }
 }
 
 .form__container {
+  margin-top: 29px;
+
   @media (min-width: $tablet-width) {
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 76px;
   }
 }
 
@@ -317,6 +358,8 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
     width: 100%;
     margin: 0;
   }
@@ -334,6 +377,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: left;
+    margin: 16px 0 21px;
   }
 }
 
@@ -349,7 +393,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 11px 0 11px 60px;
+    padding: 11px 0 10px 60px;
   }
 }
 
@@ -401,4 +445,10 @@
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-size: 26px 26px;
+}
+
+.form__radio:focus-visible + .form__mark,
+.form__checkbox:focus-visible + .form__mark {
+  outline: 1px solid $dark-grey;
+  border-color: $dark-grey;
 }

@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Интернет-магазин функционального питания для котов: подбор программы питания">
     <title>Интернет-магазин «CAT ENERGY» - Подбор программы</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <!-- Шапка сайта -->
@@ -30,15 +35,15 @@
           <!-- При начажатии на button js: добавляет класс "main-nav__toggle--active" и удаляет класс "main-nav__toggle--nojs" -->
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--nojs">
+        <ul class="main-nav__list main-nav__list--form main-nav__list--nojs">
           <!-- При начажатии на button js: добавляет класс "main-nav__list--active" и удаляет класс "main-nav__list--nojs" -->
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--form">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--form">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--form">
             <a class="main-nav__link main-nav__link--active" href="#">Подбор программы</a>
           </li>
         </ul>
@@ -120,7 +125,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__group-title subtitle">
+            <legend class="form__group-title form__group-title--comment subtitle">
               <span class="subtitle__text">Комментарий</span>
             </legend>
             <label class="visually-hidden" for="comment">О коте:</label>

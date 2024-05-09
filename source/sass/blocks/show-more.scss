@@ -8,7 +8,7 @@
     content: "";
     width: 30px;
     height: 2px;
-    top: 25px;
+    top: 19px;
     left: calc(50% - 15px);
     background-color: #d3d3d3;
   }
@@ -18,13 +18,20 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0 0 0;
+    padding: 41px 0 0 0;
 
     &::before,
     &::after {
-      top: 52px;
+      top: 81px;
       width: 60px;
       left: calc(50% - 30px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      top: 79px;
     }
   }
 }
@@ -33,12 +40,12 @@
   display: block;
   font-family: $oswald;
   color: $dark-2;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 
-  padding-top: 53px;
+  padding-top: 32px;
   margin: 0 auto 8px auto;
 
   @media (min-width: $tablet-width) {
@@ -47,8 +54,13 @@
     font-size: 20px;
     line-height: 24px;
 
-    padding-top: 110px;
+    padding-top: 121px;
     margin: 0 auto 23px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 109px;
+    margin: 0 auto 25px auto;
   }
 }
 
@@ -66,6 +78,10 @@
     line-height: 18px;
 
     margin: 0 auto 82px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 90px;
   }
 }
 
@@ -90,5 +106,10 @@
 
   &:active {
     background-color: $light-grey-2;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+    outline-offset: 0;
   }
 }
