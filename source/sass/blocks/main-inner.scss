@@ -21,6 +21,8 @@
 }
 
 .main-inner__wrapper--form {
+  padding-top: 25px;
+
   @media (min-width: $tablet-width) {
     padding: 0 70px;
     padding-top: 56px;
@@ -43,7 +45,7 @@
 }
 
 .main-inner__title {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -61,7 +63,7 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  margin: 0 0 38px 0;
+  margin: 0 0 37px 0;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
