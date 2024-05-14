@@ -57,10 +57,13 @@
 }
 
 .map__address {
+  padding-right: 3px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,6 +125,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 100%;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
 
