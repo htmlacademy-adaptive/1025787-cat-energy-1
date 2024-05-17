@@ -180,7 +180,7 @@
 }
 
 .catalog__number--currency {
-  padding-right: 11px;
+  padding-right: 13px;
   background-image: url("../img/ruble.svg");
   background-repeat: no-repeat;
   background-size: 8px 16px;
@@ -188,6 +188,10 @@
 
   @media (min-width: $tablet-width) {
     background-size: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 14px;
   }
 }
 

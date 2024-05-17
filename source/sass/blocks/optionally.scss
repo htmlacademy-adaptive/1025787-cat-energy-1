@@ -61,8 +61,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 8fr 5fr 2fr 7fr;
-    column-gap: 40px;
+    grid-template-columns: 305px 225px 60px 245px;
+    column-gap: 20px;
     row-gap: 0;
     align-items: center;
 
@@ -123,7 +123,7 @@
 
   @media (min-width: $desktop-width) {
     justify-self: start;
-    padding: 6px 0 0 4px;
+    padding: 7px 0 0 0;
   }
 }
 
@@ -142,7 +142,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 4px;
+    justify-self: start;
+    padding-top: 7px;
     background-position: right bottom;
   }
 }

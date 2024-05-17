@@ -12,6 +12,12 @@
   }
 }
 
+.main-header__color {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #64a63b 50%, #64a63b 100%);
+  }
+}
+
 .main-header__wrapper {
   width: 100%;
   max-width: $max-width;
