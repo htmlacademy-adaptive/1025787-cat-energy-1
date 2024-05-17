@@ -90,7 +90,7 @@
 }
 
 .form__group--comment {
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -117,9 +117,11 @@
   margin-top: 10px;
   margin-bottom: 36px;
   width: 100%;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    line-height: 36px;
     padding: 0;
     margin-bottom: 56px;
   }
@@ -223,7 +225,11 @@
 
 .form__label {
   margin-right: 13px;
-  min-width: max-content;
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 240px;
+  }
 }
 
 .form__input-mail,

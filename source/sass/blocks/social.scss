@@ -1,6 +1,8 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 20px;
   justify-content: center;
   align-items: center;
 
